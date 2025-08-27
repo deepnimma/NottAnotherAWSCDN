@@ -15,7 +15,7 @@ jobs:
           java-version: 23
           distribution: 'corretto'
 
-      - name: Grant exectute permissions for gradlew
+      - name: Grant execute permissions for gradlew
         run: chmod +x ./gradlew
 
       - name: Run Spotless Check

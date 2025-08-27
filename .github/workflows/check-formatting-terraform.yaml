@@ -1,0 +1,18 @@
+name: Terraform fmt Check
+on:
+  pull_request:
+
+jobs:
+  terraform-fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: latest
+
+      - name: Run Terraform Format Check
+        run: terraform fmt -recursive -check infrastructure

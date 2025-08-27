@@ -11,11 +11,9 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.googlejavaformat:google-java-format:1.28.0"
+    def formatterVersion = '1.28.0'
 
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation "com.google.googlejavaformat:google-java-format:$formatterVersion"
 }
 
 test {

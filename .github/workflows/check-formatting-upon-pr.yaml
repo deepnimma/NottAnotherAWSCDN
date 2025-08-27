@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 23
-          distribution: 'coretto'
+          distribution: 'corretto'
 
       - name: Grant exectute permissions for gradlew
         run: chmod +x ./gradlew

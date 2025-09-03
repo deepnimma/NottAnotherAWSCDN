@@ -1,3 +1,4 @@
+/* (C)2025 */
 package com.deepnimma.cdn;
 
 import com.deepnimma.tcg.SeriesIdentifier;

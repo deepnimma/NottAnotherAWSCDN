@@ -2,9 +2,15 @@
 package com.deepnimma.cdn;
 
 import com.deepnimma.tcg.SeriesIdentifier;
+import lombok.Getter;
+import lombok.Setter;
 
 public class Album {
+    @Getter
+    @Setter
     private SeriesIdentifier identifier;
+
+    @Getter
     private String[] imageLinks;
 
     public Album() {

@@ -12,8 +12,16 @@ repositories {
 
 dependencies {
     def formatterVersion = '1.28.0'
+    def lombokVersion = "1.18.38"
+
+    compileOnly("org.projectlombok:lombok:$lombokVersion")
+    annotationProcessor("org.projectlombok:lombok:$lombokVersion")
 
     implementation "com.google.googlejavaformat:google-java-format:$formatterVersion"
+
+    // Testing
+    testCompileOnly("org.projectlombok:lombok:$lombokVersion")
+    testAnnotationProcessor("org.projectlombok:lombok:$lombokVersion")
 }
 
 test {
